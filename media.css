@@ -1,0 +1,192 @@
+/* Ecran PC Portable*/
+@media (max-width: 1200px) {
+
+    /* Navbar */
+    .btn-link-nav {
+        letter-spacing: 2px;
+        font-size: 2.2vh;
+    }
+
+    /* Navbar */
+
+
+
+
+
+
+
+
+
+    /* Début Home */
+    .title-home {
+        font-size: 60px;
+    }
+
+    .home-text {
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+
+    /* Fin Home */
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Debut Competences */
+
+    .bloc-techno {
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 100%;
+        gap: 4px;
+    }
+
+    .box-techno {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .titre-techno {
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: max-content;
+        font-size: 22px;
+        color: var(--beige-bg-light);
+    }
+
+    .ligne-techno {
+        display: flex;
+        padding: 7px 25px;
+        height: 7rem;
+        width: fit-content;
+        background-color: var(--brown-bg-mid);
+        align-items: center;
+        gap: 1rem;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+
+
+    .ligne-top {
+        border-radius: 15px;
+    }
+
+    .ligne-mid {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .ligne-bot {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .techno {
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: var(--whitecolor);
+        transition: transform .3s;
+        gap: 5px;
+    }
+
+    .img-techno {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .svg-icon {
+        margin: 0 auto;
+    }
+
+    .techno:hover {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+    }
+
+    .text-techno:hover {
+        cursor: default;
+    }
+
+    .bloc-skill {
+        padding: 2rem 0;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        height: 50%;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .ligne-skill {
+        padding: 1rem 0;
+        height: fit-content;
+        width: 23rem;
+        border-radius: 15px;
+        background-color: var(--brown-bg-mid);
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        text-align: center;
+    }
+
+    .titre-skill {
+        margin-bottom: 2.53rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+        font-size: 23px;
+        color: var(--beige-bg-light);
+    }
+
+    .box-skill {
+        height: fit-content;
+    }
+
+    .skill {
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 20px;
+        list-style: none;
+        color: var(--whitecolor);
+        transition: transform .3s;
+        cursor: default;
+    }
+
+    .skill:hover {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+    }
+
+    /* Fin Competences */
+
+
+
+}
+
+/* Ecran PC Portable*/
+
+
+/* Ecran Tablette*/
+@media (max-width: 1020px) {}
+
+/* Ecran Tablette*/
+
+
+/* Ecran Mobile*/
+@media (max-width: 425px) {}
+
+/* Ecran Mobile*/
