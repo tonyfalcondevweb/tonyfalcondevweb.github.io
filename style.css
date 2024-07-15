@@ -527,7 +527,6 @@ label {
 
 .container-msg-btn .contact-champ {
     transition: transform .3s;
-    overflow: hidden;
 }
 
 .container-msg-btn .contact-champ:hover {
@@ -541,11 +540,16 @@ label {
 
 .input-msg {
     padding: 0.5rem 0.6rem;
+    border: 0 solid white;
     border-radius: 15px;
     font-family: Chillax;
     font-size: 15px;
     width: 70%;
     height: 10rem;
+}
+
+.input-msg:focus {
+    border: 0 solid white;
 }
 
 .container-btn-form {
