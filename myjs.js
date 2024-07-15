@@ -13,22 +13,22 @@ const observer = new IntersectionObserver((entries) => {
             }
 
             if (entry.target.classList[1] == "ligne-top") {
-                entry.target.classList.add("slide-up-top-show");      
+                entry.target.classList.add("slide-up-top-show");
             }
 
             if (entry.target.classList[1] == "ligne-mid") {
-                entry.target.classList.add("slide-up-mid-show");     
+                entry.target.classList.add("slide-up-mid-show");
             }
 
             if (entry.target.classList[1] == "ligne-bot") {
-                entry.target.classList.add("slide-up-bot-show");   
+                entry.target.classList.add("slide-up-bot-show");
             }
 
             if (entry.target.classList[0] == "ligne-skill") {
-                entry.target.classList.add("slide-up-skill-show");     
+                entry.target.classList.add("slide-up-skill-show");
             }
         }
-        else{
+        else {
             entry.target.classList.remove("blur-base-show");
             entry.target.classList.remove("scale-base-show");
             entry.target.classList.remove("slide-up-top-show");
@@ -48,41 +48,52 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // Navbar
 // Place une barre animé "nav-anime-active" sous le menu survolé
-var obs = new IntersectionObserver((entries) => {
-
-    
-
-    entries.forEach(element => {
-
-        var navElement = document.querySelector('#nav-'+element.target.id)
-
-	if(element.isIntersecting === true){
-         
-        navElement.classList.add("nav-anime-active")
-    }
-    else{
-
-        navElement.classList.remove("nav-anime-active")
-    }
-
-        
-    });
+{
+    var obs = new IntersectionObserver((entries) => {
 
 
 
-}, { threshold: [1] });
+        entries.forEach(element => {
 
-const take = document.querySelectorAll('section');
+            var navElement = document.querySelector('#nav-' + element.target.id)
+            var mobileElement = document.querySelector('#mobile-' + element.target.id)
+            var mobileDotElement = document.querySelector('#dot-' + element.target.id)
 
-take.forEach((el) => obs.observe(el));
+            if (element.isIntersecting === true) {
+
+                navElement.classList.add("nav-anime-active")
+                mobileElement.classList.add("mobile-link-active")
+                mobileDotElement.classList.add("mobile-dot-active")
+             
+            }
+            else {
+
+                navElement.classList.remove("nav-anime-active")
+                mobileElement.classList.remove("mobile-link-active")
+                mobileDotElement.classList.remove("mobile-dot-active")
+               
+            }
+
+
+        });
+
+
+
+    }, { threshold: [1] });
+
+    const take = document.querySelectorAll('section');
+
+    take.forEach((el) => obs.observe(el));
+}
 // Navbar
+
 
 
 
 
 // Formulaire
 // Empeche l'envoi du formulaire
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Empêche la soumission normale du formulaire
 
     // Récupère les données du formulaire
