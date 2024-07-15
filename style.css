@@ -25,7 +25,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 100dvh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     position: relative;
@@ -37,7 +37,7 @@ section {
 }
 
 .container {
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     scroll-snap-align: start;
