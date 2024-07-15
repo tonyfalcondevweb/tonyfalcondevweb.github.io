@@ -64,14 +64,14 @@ hiddenElements.forEach((el) => observer.observe(el));
                 navElement.classList.add("nav-anime-active")
                 mobileElement.classList.add("mobile-link-active")
                 mobileDotElement.classList.add("mobile-dot-active")
-             
+
             }
             else {
 
                 navElement.classList.remove("nav-anime-active")
                 mobileElement.classList.remove("mobile-link-active")
                 mobileDotElement.classList.remove("mobile-dot-active")
-               
+
             }
 
 

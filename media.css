@@ -24,6 +24,8 @@
 
     /* Navbar */
 
+
+    /* Home */
     .title-home {
         font-size: 5vw;
     }
@@ -35,6 +37,7 @@
     .nav-anime-hidden {
         height: 0.2vw;
     }
+    /* Home */
 }
 
 /* Ecran PC Portable*/
@@ -55,10 +58,10 @@
         align-items: center;
         margin: 1rem;
         color: var(--whitecolor);
-        font-size: 2.7vw;
+        font-size: 4.5vw;
     }
 
-    .container-menu-mobile > * {
+    .container-menu-mobile>* {
         list-style: none;
     }
 
@@ -66,9 +69,7 @@
         width: 100%;
     }
 
-    .menu-dot-mobile {
-
-    }
+    .menu-dot-mobile {}
 
     .link-mobile {
         display: none;
@@ -93,9 +94,23 @@
         background-color: var(--whitecolor);
         animation: slide-up 0.3s ease;
     }
+
     /* Menu mobile */
 
 
+    /* Home */
+    .title-home {
+        font-size: 6vw;
+    }
+
+    .home-text {
+        font-size: 5.5vw;
+    }
+
+    .nav-anime-hidden {
+        height: 0.2vw;
+    }
+    /* Home */
 
 
     /* Animation menu mobile */
@@ -108,6 +123,8 @@
             transform: scale(1);
         }
     }
+
     /* Animation menu mobile */
 }
+
 /* Ecran Mobile */
