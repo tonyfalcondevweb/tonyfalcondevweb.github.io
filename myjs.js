@@ -80,42 +80,19 @@ take.forEach((el) => obs.observe(el));
 
 
 
+// Formulaire
+// Empeche l'envoi du formulaire
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche la soumission normale du formulaire
 
+    // Récupère les données du formulaire
+    const formData = new FormData(this);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const obs = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       const square = entry.target.querySelector('.square');
-  
-//       if (entry.isIntersecting) {
-//         comp.classList.add('square-animation');
-//         return; // if we added the class, exit the function
-//       }
-  
-//       // We're not intersecting, so remove the class!
-//       comp.classList.remove('square-animation');
-//     });
-//   });
-//   const comp = document.querySelector('.competences')
-//   obs.observe(comp);
-
-
-
-
-
+    // Envoie les données du formulaire de manière asynchrone
+    fetch(this.action, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors' // Permet d'éviter les problèmes de CORS
+    }).then(window.location.href = "https://tonyfalcondevweb.github.io/")
+});
+// Formulaire

@@ -452,8 +452,116 @@ header {
 
 /* Début Contact */
 .contact {
+    align-items: center;
     background-color: var(--brown-bg);
     padding-top: 7rem;
+}
+
+form {
+    padding: 4rem 2rem;
+    color: var(--beige-bg-light);
+    width: 58rem;
+    border-radius: 15px;
+    background-color: var(--brown-bg-mid);
+}
+
+.contact-champ {
+    display: flex;
+    transition: transform .3s;
+}
+
+label {
+    margin: 0 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 20px;
+}
+
+.input-contact {
+    padding: 0 0.5rem;
+    height: 2rem;
+    border-radius: 15px;
+    font-family: Chillax;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.contact-champ:hover {
+    transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+}
+
+
+
+
+
+.container-email-tel{
+    display: flex;
+    margin: 0 0 6rem 0;
+    padding: 0 2rem;
+    gap: 5rem;
+}
+
+#input-email {
+    width: 18rem;
+}
+
+
+
+#input-tel {
+    width: 11.5rem;
+}
+
+
+
+
+.container-msg-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 2rem;
+}
+
+.container-msg-btn .contact-champ {
+    transition: transform .3s;
+}
+
+.container-msg-btn .contact-champ:hover {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+}
+
+#input-msg {
+    padding: 0.5rem 0.6rem;
+    border-radius: 15px;
+    font-family: Chillax;
+    font-size: 15px;
+    width: 70%;
+    height: 10rem;
+}
+
+.container-btn-form {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-form {
+    cursor: pointer;
+    height: 2.3rem;
+    width: 12rem;
+    border: 2px solid var(--beige-bg-light);
+    border-radius: 10px;
+    font-family: Chillax;
+    font-size: 15px;
+    font-weight: bolder;
+    color: var(--whitecolor);
+    background-color: var(--brown-bg-mid);
+    transition: transform .3s;
+}
+
+.btn-form:hover {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 /* Fin Contact */
 
@@ -570,5 +678,3 @@ header {
     transition-delay: 0.60s;
 }
 /* Animation */
-
-

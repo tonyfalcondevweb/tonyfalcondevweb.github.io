@@ -361,16 +361,23 @@
 
             <div class="bloc-text animation scale-base-hidden">
                 <p>
-                    Je suis Tony Chundunsing, <strong class="profil-strong">Développeur Web</strong>  passionné par la création d'expériences numériques
+                    Je suis Tony Chundunsing, <strong class="profil-strong">Développeur Web</strong> passionné par la
+                    création d'expériences numériques
                     innovantes. Avec une formation solide en développement web et une expérience variée en tant que
-                    <strong class="profil-strong">Développeur Fullstack</strong>, je suis déterminé à transformer des concepts en réalité grâce à mes
+                    <strong class="profil-strong">Développeur Fullstack</strong>, je suis déterminé à transformer des
+                    concepts en réalité grâce à mes
                     compétences techniques et ma créativité.
                 </p>
                 <br>
                 <p>
-                    Mon profil se caractérise par une solide maîtrise des langages tels que <strong class="profil-strong"> React.js </strong>, <strong class="profil-strong">JavaScript</strong>, <strong class="profil-strong">Java</strong>,
-                    <strong class="profil-strong">Spring</strong>, et <strong class="profil-strong">SQL</strong> cela me donne l'occasion de pouvoir participer à un projet sur tous les
-                    angles du <strong class="profil-strong">Front-end</strong> au <strong class="profil-strong">Back-end</strong>. De plus, je possède des compétences en <strong class="profil-strong">Design</strong>,
+                    Mon profil se caractérise par une solide maîtrise des langages tels que <strong
+                        class="profil-strong"> React.js </strong>, <strong class="profil-strong">JavaScript</strong>,
+                    <strong class="profil-strong">Java</strong>,
+                    <strong class="profil-strong">Spring</strong>, et <strong class="profil-strong">SQL</strong> cela me
+                    donne l'occasion de pouvoir participer à un projet sur tous les
+                    angles du <strong class="profil-strong">Front-end</strong> au <strong
+                        class="profil-strong">Back-end</strong>. De plus, je possède des compétences en <strong
+                        class="profil-strong">Design</strong>,
                     notamment dans des outils tels que Photoshop, Figma et After Effects.
                 </p>
             </div>
@@ -385,7 +392,38 @@
 
         <section id="contact" class="container contact">
 
-            <h2>Contact</h2>
+
+            <form id="contact-form"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSexnoYaw9dDUIex-fKJozX_-sqIN50WmAWBKEDl8Ms2Usge7g/formResponse"  onSubmit={handleSubmit}>
+
+                <div class="container-email-tel">
+                    <div class="contact-champ">
+                        <label id="label-email" for="entry.1986365585">Email :</label>
+                        <input class="input-contact" id="input-email" type="email" name="entry.1986365585"
+                            placeholder="" required>
+                    </div>
+
+                    <div class="contact-champ">
+                        <label id="label-tel" for="entry.913581152">Téléphone :</label>
+                        <input class="input-contact" id="input-tel" type="tel" name="entry.913581152" placeholder="">
+                    </div>
+                </div>
+
+
+                <div class="container-msg-btn">
+
+                    <div class="contact-champ">
+                        <label id="label-msg" for="entry.960300449">Message :</label>
+                        <textarea name="entry.960300449" id="input-msg" required></textarea>
+                    </div>
+
+                    <div class="container-btn-form">
+                        <button class="btn-form" class="input-contact" type="submit">Envoyer</button>
+                    </div>
+                </div>
+
+
+            </form>
 
         </section>
 
@@ -397,8 +435,3 @@
 <script type="text/javascript" src="myjs.js"></script>
 
 </html>
-
-
-
-
-<!-- mettre un h1 -->
