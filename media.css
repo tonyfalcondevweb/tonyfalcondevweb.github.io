@@ -49,16 +49,20 @@
 
 
     /* Compétences */
+    .bloc-techno {
+        margin-top: 5rem;
+    }
+
     .ligne-techno {
-        height: 11vw;
+        height: 6vw;
     }
 
     .ligne-top {
-        width: 70vw;
+        width: 65vw;
     }
 
     .ligne-mid {
-        width: 60vw;
+        width: 57.5vw;
     }
 
     .ligne-bot {
@@ -66,44 +70,42 @@
     }
 
     .titre-techno {
-        font-size: 1.7vw;
+        font-size: 1.4vw;
         width: 20vw;
     }
 
     .fa-brands {
-        font-size: 3.2vw;
+        font-size: 2.8vw;
     }
 
     .fa-solid {
-        font-size: 3.2vw;
+        font-size: 2.8vw;
     }
 
     .svg-icon {
-        width: 3.2vw;
+        width: 2.8vw;
     }
 
     .text-techno {
-        font-size: 1.3vw;
+        font-size: 1.2vw;
+        width: auto;
     }
-
-
-
 
 
 
     .ligne-skill {
-        height: 25vw;
-        width: 25vw;
+        height: 20vw;
+        width: 20vw;
     }
 
     .titre-skill {
-        margin-bottom: 2.5vw;
-        font-size: 1.7vw;
+        margin-bottom: 2vw;
+        font-size: 1.4vw;
     }
 
     .skill {
-        margin: 1.4vw 0;
-        font-size: 1.55vw;
+        margin: 1vw 0;
+        font-size: 1.2vw;
     }
 
     /* Compétences */
@@ -137,7 +139,6 @@
     }
 
     .profil-strong {
-
         letter-spacing: 1.2px;
     }
 
