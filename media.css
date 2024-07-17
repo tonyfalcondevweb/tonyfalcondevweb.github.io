@@ -242,7 +242,7 @@
 
     /* Compétences */
     .competences {
-        gap: 5vw;
+        gap: 2vw;
     }
 
     .bloc-techno {
@@ -250,7 +250,7 @@
     }
 
     .bloc-techno-mobile {
-        margin: 5rem 7vw 0 7vw;
+        margin: 2rem 7vw 0 7vw;
         padding: 1rem;
         height: auto;
         background-color: var(--brown-bg-mid);
@@ -259,8 +259,8 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-column-gap: 6px;
+        grid-row-gap: 6px;
         -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
         box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
     }
