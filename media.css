@@ -241,8 +241,7 @@
 
     /* Compétences */
     .competences {
-        padding-top: 4vw;
-        gap: 9vw;
+        /* gap: 9vw; */
     }
 
     .bloc-techno {
@@ -356,7 +355,7 @@
     @media (max-width: 390px) {
 
         .bloc-photo {
-            margin-top: 3.5rem;
+            /* margin-top: 3.5rem; */
         }
 
         .photo {
