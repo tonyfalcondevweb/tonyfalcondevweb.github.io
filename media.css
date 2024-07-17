@@ -14,7 +14,7 @@
     .bloc-techno-mobile {
         display: none;
     }
-    
+
 
     /* Navbar */
     .menu-right {
@@ -107,6 +107,41 @@
     }
 
     /* Compétences */
+
+
+
+
+
+
+    /* Profil */
+    .profil {
+        gap: 4vw;
+    }
+
+    /* container */
+
+    /* Photo*/
+    .photo {
+        width: 20vw;
+        height: 33vw;
+    }
+
+    /* Photo*/
+
+    /* Text*/
+    .bloc-text {
+        width: 55rem;
+        font-size: 1.7vw;
+        line-height: 2.9vw;
+
+    }
+
+    .profil-strong {
+
+        letter-spacing: 1.2px;
+    }
+
+    /* Profil */
 
 }
 
@@ -206,8 +241,8 @@
 
     /* Compétences */
     .competences {
-        padding-top: 10vw;
-        gap: 3.5vw;
+        padding-top: 4vw;
+        gap: 9vw;
     }
 
     .bloc-techno {
@@ -226,6 +261,8 @@
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
+        -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
+        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
     }
 
 
@@ -276,6 +313,51 @@
     }
 
     /* Compétences */
+
+
+
+
+
+
+
+    /* Profil */
+    .profil {
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        gap: 10vw;
+    }
+
+    /* container */
+
+    /* Photo*/
+    .bloc-photo {
+        margin-top: 20vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo {
+        width: 25vw;
+        height: 40vw;
+    }
+
+    /* Photo*/
+
+    /* Text*/
+    .bloc-text {
+        padding: 0 60vw;
+        font-size: 3.5vw;
+        line-height: 7vw;
+    }
+
+    .profil-strong {
+
+        /* letter-spacing: 1.2px; */
+    }
+
+    /* Profil */
 
 }
 
