@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 @media (min-width: 1301px) {
     .bloc-techno-mobile {
         display: none;
@@ -326,6 +325,10 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.fa-brands {
+    font-size: 3rem;
 }
 
 .svg-icon {
