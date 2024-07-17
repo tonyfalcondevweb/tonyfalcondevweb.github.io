@@ -242,7 +242,7 @@
 
     /* Compétences */
     .competences {
-        /* gap: 9vw; */
+        gap: 5vw;
     }
 
     .bloc-techno {
@@ -250,7 +250,7 @@
     }
 
     .bloc-techno-mobile {
-        margin: 0 7vw;
+        margin: 10rem 7vw 0 7vw;
         padding: 1rem;
         height: auto;
         background-color: var(--brown-bg-mid);
