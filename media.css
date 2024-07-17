@@ -8,10 +8,13 @@
 
 
 
-
-
 /* Ecran PC Portable*/
 @media (max-width: 1300px) {
+
+    .bloc-techno-mobile {
+        display: none;
+    }
+    
 
     /* Navbar */
     .menu-right {
@@ -37,7 +40,74 @@
     .nav-anime-hidden {
         height: 0.2vw;
     }
+
     /* Home */
+
+
+
+
+
+
+    /* Compétences */
+    .ligne-techno {
+        height: 11vw;
+    }
+
+    .ligne-top {
+        width: 70vw;
+    }
+
+    .ligne-mid {
+        width: 60vw;
+    }
+
+    .ligne-bot {
+        width: 50vw;
+    }
+
+    .titre-techno {
+        font-size: 1.7vw;
+        width: 20vw;
+    }
+
+    .fa-brands {
+        font-size: 3.2vw;
+    }
+
+    .fa-solid {
+        font-size: 3.2vw;
+    }
+
+    .svg-icon {
+        width: 3.2vw;
+    }
+
+    .text-techno {
+        font-size: 1.3vw;
+    }
+
+
+
+
+
+
+    .ligne-skill {
+        height: 25vw;
+        width: 28vw;
+    }
+
+    .titre-skill {
+        margin-bottom: 2.5vw;
+        font-size: 1.7vw;
+    }
+
+    .skill {
+        margin: 1.4vw 0;
+        font-size: 1.55vw;
+    }
+
+    /* Compétences */
+
 }
 
 /* Ecran PC Portable*/
@@ -68,8 +138,6 @@
     .menu-mobile {
         width: 100%;
     }
-
-    .menu-dot-mobile {}
 
     .link-mobile {
         display: none;
@@ -110,6 +178,7 @@
     .nav-anime-hidden {
         height: 0.2vw;
     }
+
     /* Home */
 
 
@@ -125,6 +194,89 @@
     }
 
     /* Animation menu mobile */
+
+
+
+
+
+
+
+
+
+
+    /* Compétences */
+    .competences {
+        padding-top: 10vw;
+        gap: 3.5vw;
+    }
+
+    .bloc-techno {
+        display: none;
+    }
+
+    .bloc-techno-mobile {
+        margin: 0 7vw;
+        padding: 1rem;
+        height: auto;
+        background-color: var(--brown-bg-mid);
+        color: var(--whitecolor);
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+
+    .techno-mobile {
+        margin: 20px 0;
+        text-align: center;
+        width: auto;
+    }
+
+    .fa-brands {
+        font-size: 9vw;
+    }
+
+    .fa-solid {
+        font-size: 9vw;
+    }
+
+    .svg-icon {
+        width: 9vw;
+    }
+
+    .text-techno-mobile {
+        font-size: 3.2vw;
+    }
+
+
+
+
+    .bloc-skill {
+        padding: 0 7vw;
+        height: auto;
+        gap: 1vw;
+    }
+
+    .ligne-skill {
+        height: 100%;
+        width: 100%;
+    }
+
+    .titre-skill {
+        margin-bottom: 2.5vw;
+        font-size: 3.5vw;
+    }
+
+    .skill {
+        margin: 1.4vw 0;
+        font-size: 2.7vw;
+    }
+
+    /* Compétences */
+
 }
 
 /* Ecran Mobile */

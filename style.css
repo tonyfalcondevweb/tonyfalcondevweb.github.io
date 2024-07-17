@@ -7,6 +7,11 @@
 }
 
 
+@media (min-width: 1301px) {
+    .bloc-techno-mobile {
+        display: none;
+    }
+}
 
 
 
@@ -378,6 +383,7 @@ header {
 
 .svg-icon {
     margin: 0 auto;
+    width: 3rem;
 }
 
 .techno:hover {
@@ -600,6 +606,7 @@ label {
 
 
 
+
 /* Animation */
 .blur-base-hidden {
     opacity: 0;
@@ -617,7 +624,7 @@ label {
 
 
 /* ---------------- */
-
+@media (min-width: 1301px) {
 
 .scale-base-hidden {
     opacity: 0;
@@ -635,67 +642,68 @@ label {
 /* ---------------- */
 
 
-.slide-up-top-hidden {
-    opacity: 0;
-    transform: scale(0.6);
+    .slide-up-top-hidden {
+        opacity: 0;
+        transform: scale(0.6);
 
-}
+    }
 
-.slide-up-top-show {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.6s ease-out;
-}
-
-
-/* ---------------- */
+    .slide-up-top-show {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.6s ease-out;
+    }
 
 
-.slide-up-mid-hidden {
-    opacity: 0;
-    transform: scale(0.6);
-
-}
-
-.slide-up-mid-show {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.6s ease-out;
-    transition-delay: 0.20s;
-}
+    /* ---------------- */
 
 
-/* ---------------- */
+    .slide-up-mid-hidden {
+        opacity: 0;
+        transform: scale(0.6);
+
+    }
+
+    .slide-up-mid-show {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.6s ease-out;
+        transition-delay: 0.20s;
+    }
 
 
-.slide-up-bot-hidden {
-    opacity: 0;
-    transform: scale(0.6);
-
-}
-
-.slide-up-bot-show {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.6s ease-out;
-    transition-delay: 0.40s;
-}
+    /* ---------------- */
 
 
-/* ---------------- */
+    .slide-up-bot-hidden {
+        opacity: 0;
+        transform: scale(0.6);
+
+    }
+
+    .slide-up-bot-show {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.6s ease-out;
+        transition-delay: 0.40s;
+    }
 
 
-.slide-up-skill-hidden {
-    opacity: 0;
-    transform: scale(0.6);
+    /* ---------------- */
 
-}
 
-.slide-up-skill-show {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.6s ease-out;
-    transition-delay: 0.60s;
+    .slide-up-skill-hidden {
+        opacity: 0;
+        transform: scale(0.6);
+
+    }
+
+    .slide-up-skill-show {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.6s ease-out;
+        transition-delay: 0.60s;
+    }
 }
 
 /* Animation */
