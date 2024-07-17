@@ -242,7 +242,7 @@
 
     /* Compétences */
     .competences {
-        gap: 2vw;
+        gap: 3vw;
     }
 
     .bloc-techno {
@@ -366,7 +366,7 @@
 
         .bloc-text {
             margin-top: 1rem;
-            font-size: 3.3vw;
+            font-size: 3.8vw;
             line-height: 1.5rem;
         }
 
