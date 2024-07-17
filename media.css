@@ -340,7 +340,7 @@
 
     .photo {
         width: 25vw;
-        height: 40vw;
+        height: 42.5vw;
     }
 
     /* Photo*/
@@ -348,13 +348,8 @@
     /* Text*/
     .bloc-text {
         padding: 0 60vw;
-        font-size: 3.5vw;
+        font-size: 3.71vw;
         line-height: 7vw;
-    }
-
-    .profil-strong {
-
-        /* letter-spacing: 1.2px; */
     }
 
     /* Profil */
