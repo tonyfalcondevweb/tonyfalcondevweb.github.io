@@ -349,7 +349,7 @@
     .bloc-text {
         padding: 0 7vw;
         width: auto;
-        font-size: 4vw;
+        font-size: 3.3vw;
         line-height: 7vw;
     }
 
@@ -366,7 +366,7 @@
 
         .bloc-text {
             margin-top: 1rem;
-            font-size: 4.5vw;
+            font-size: 3.3vw;
             line-height: 1.5rem;
         }
 
