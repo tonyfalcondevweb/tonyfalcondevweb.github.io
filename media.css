@@ -15,14 +15,17 @@
         display: none;
     }
 
-
     /* Navbar */
+    .navbar {
+        padding: 0 3.5vw;
+    }
+
     .menu-right {
-        gap: 6vw;
+        gap: 3.5vw;
     }
 
     .btn-link-nav {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     /* Navbar */
@@ -51,61 +54,70 @@
     /* Compétences */
     .bloc-techno {
         margin-top: 5rem;
+        height: auto;
+        width: auto;
     }
 
     .ligne-techno {
-        height: 6vw;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        height: auto;
+        justify-content: center;
     }
 
     .ligne-top {
-        width: 65vw;
+        padding: 0 2rem;
+        width: auto;
     }
 
     .ligne-mid {
-        width: 57.5vw;
+        padding: 0 2rem;
+        width: auto;
     }
 
     .ligne-bot {
-        width: 50vw;
+        padding: 0 2rem;
+        width: auto;
     }
 
     .titre-techno {
-        font-size: 1.4vw;
-        width: 20vw;
+        font-size: large;
+        width: auto;
     }
 
     .fa-brands {
-        font-size: 2.2vw;
+        font-size: xx-large;
     }
 
     .fa-solid {
-        font-size: 2.2vw;
+        font-size: xx-large;
     }
 
     .svg-icon {
-        width: 2.2vw;
+        width: 2rem;
     }
 
     .text-techno {
-        font-size: 1vw;
+        font-size: small;
         width: auto;
     }
 
 
 
     .ligne-skill {
-        height: 20vw;
-        width: 20vw;
+        padding: 1.5rem;
+        height: auto;
+        width: 18rem;
     }
 
     .titre-skill {
-        margin-bottom: 2vw;
-        font-size: 1.4vw;
+        margin: 0;
+        font-size: large;
     }
 
     .skill {
-        margin: 1vw 0;
-        font-size: 1.2vw;
+        font-size: medium;
     }
 
     /* Compétences */
@@ -117,24 +129,25 @@
 
     /* Profil */
     .profil {
-        gap: 4vw;
+        padding: 0 6rem;
+        gap: 5rem;
     }
 
     /* container */
 
     /* Photo*/
     .photo {
-        width: 20vw;
-        height: 33vw;
+        width: auto;
+        height: 28vw;
     }
 
     /* Photo*/
 
     /* Text*/
     .bloc-text {
-        width: 55rem;
-        font-size: 1.7vw;
-        line-height: 2.9vw;
+        width: auto;
+        font-size: large;
+        line-height: 2rem;
 
     }
 
@@ -143,6 +156,21 @@
     }
 
     /* Profil */
+
+
+
+    /* Contact */
+    form {
+        margin: 0 2rem;
+        padding: 4rem 0;
+        width: auto;
+    }
+
+    .input-contact {
+        width: auto;
+    }
+
+    /* Contact */
 
 }
 
@@ -153,7 +181,7 @@
 @media (max-width: 770px) {
 
 
-    /* Menu mobile */
+    /* Navbar mobile */
     .navbar {
         display: none;
     }
@@ -199,7 +227,7 @@
         animation: slide-up 0.3s ease;
     }
 
-    /* Menu mobile */
+    /* Navbar mobile */
 
 
     /* Home */
@@ -209,10 +237,6 @@
 
     .home-text {
         font-size: 5.5vw;
-    }
-
-    .nav-anime-hidden {
-        height: 0.2vw;
     }
 
     /* Home */
@@ -242,7 +266,8 @@
 
     /* Compétences */
     .competences {
-        gap: 3vw;
+        padding-top: 7rem;
+        gap: 1rem;
     }
 
     .bloc-techno {
@@ -250,8 +275,8 @@
     }
 
     .bloc-techno-mobile {
-        margin: 2rem 7vw 0 7vw;
-        padding: 1rem;
+        margin: 0 1rem;
+        padding: 1rem 0;
         height: auto;
         background-color: var(--brown-bg-mid);
         color: var(--whitecolor);
@@ -259,42 +284,44 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 6px;
-        grid-row-gap: 6px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
         -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
         box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
     }
 
 
     .techno-mobile {
-        margin: 20px 0;
+        margin: 1rem 0;
+        padding: 0;
         text-align: center;
         width: auto;
     }
 
     .fa-brands {
-        font-size: 9vw;
+        font-size: xx-large;
     }
 
     .fa-solid {
-        font-size: 9vw;
+        font-size: xx-large;
     }
 
     .svg-icon {
-        width: 9vw;
+        width: 2rem;
     }
 
     .text-techno-mobile {
-        font-size: 3.2vw;
+        font-size: small;
     }
 
 
 
 
     .bloc-skill {
-        padding: 0 7vw;
+        margin: 0;
+        padding: 0 1rem;
         height: auto;
-        gap: 1vw;
+        gap: 1rem;
     }
 
     .ligne-skill {
@@ -303,13 +330,13 @@
     }
 
     .titre-skill {
-        margin-bottom: 2.5vw;
-        font-size: 3.5vw;
+        margin-bottom: 0;
+        font-size: small;
     }
 
     .skill {
-        margin: 1.4vw 0;
-        font-size: 2.7vw;
+        margin: 0.5rem 0;
+        font-size: 11px;
     }
 
     /* Compétences */
@@ -332,14 +359,18 @@
     /* container */
 
     /* Photo*/
+    .profil {
+        display: flex;
+        justify-content: center;
+    }
+
     .bloc-photo {
-        margin-top: 15vw;
         display: flex;
         justify-content: center;
     }
 
     .photo {
-        width: 25vw;
+        width: auto;
         height: 42.5vw;
     }
 
@@ -347,7 +378,8 @@
 
     /* Text*/
     .bloc-text {
-        padding: 0 7vw;
+        padding: 0 2rem;
+        height: auto;
         width: auto;
         font-size: 3.5vw;
         line-height: 7vw;
@@ -355,12 +387,12 @@
 
     @media (max-width: 390px) {
 
-        .bloc-photo {
-            /* margin-top: 3.5rem; */
+        .profil {
+            padding-top: 1rem;
         }
 
         .photo {
-            width: 90px;
+            width: auto;
             height: 140px;
         }
 
@@ -368,11 +400,56 @@
             margin-top: 1rem;
             font-size: 3.8vw;
             line-height: 1.5rem;
+            height: auto;
+            width: auto;
         }
 
     }
 
     /* Profil */
+
+
+    /* Contact */
+    .contact {
+        padding-top: 5rem;
+    }
+
+    form {
+        padding-top: 2rem;
+        margin: 0;
+        height: auto;
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: medium;
+    }
+
+    .container-email-tel {
+        margin-bottom: 3rem;
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .contact-champ {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .input-contact {
+        width: auto;
+    }
+
+    .input-msg {
+        height: auto;
+        width: auto;
+    }
+
+    /* Contact */
 
 }
 
