@@ -146,8 +146,8 @@
     /* Text*/
     .bloc-text {
         width: auto;
-        font-size: large;
-        line-height: 2rem;
+        font-size: medium;
+        line-height: 1.5rem;
 
     }
 
@@ -276,7 +276,7 @@
 
     .bloc-techno-mobile {
         margin: 0 1rem;
-        padding: 1rem 0;
+        padding: 3rem 0;
         height: auto;
         background-color: var(--brown-bg-mid);
         color: var(--whitecolor);
@@ -352,7 +352,6 @@
         padding: 0;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: start;
         gap: 1.5rem;
     }
 
@@ -360,18 +359,13 @@
 
     /* Photo*/
     .profil {
-        display: flex;
-        justify-content: center;
-    }
-
-    .bloc-photo {
-        display: flex;
-        justify-content: center;
+        justify-content: end;
+        padding-bottom: 5rem;
     }
 
     .photo {
         width: auto;
-        height: 42.5vw;
+        height: 35vw;
     }
 
     /* Photo*/
@@ -381,31 +375,9 @@
         padding: 0 2rem;
         height: auto;
         width: auto;
-        font-size: 3.5vw;
-        line-height: 7vw;
+        font-size: small;
+        line-height: 1.5rem;
     }
-
-    @media (max-width: 390px) {
-
-        .profil {
-            padding-top: 1rem;
-        }
-
-        .photo {
-            width: auto;
-            height: 140px;
-        }
-
-        .bloc-text {
-            margin-top: 1rem;
-            font-size: 3.8vw;
-            line-height: 1.5rem;
-            height: auto;
-            width: auto;
-        }
-
-    }
-
     /* Profil */
 
 
