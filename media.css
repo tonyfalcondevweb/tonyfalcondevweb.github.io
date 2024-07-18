@@ -266,8 +266,9 @@
 
     /* Compétences */
     .competences {
-        padding-top: 7rem;
+        padding-bottom: 5rem;
         gap: 1rem;
+        justify-content: end;
     }
 
     .bloc-techno {
