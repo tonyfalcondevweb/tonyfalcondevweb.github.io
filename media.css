@@ -178,7 +178,7 @@
 
 
 /* Ecran Mobile*/
-@media (max-width: 770px) {
+@media (max-width: 768px) {
 
 
     /* Navbar mobile */
@@ -277,7 +277,7 @@
 
     .bloc-techno-mobile {
         margin: 0 1rem;
-        padding: 3rem 0;
+        padding: 1rem 0;
         height: auto;
         background-color: var(--brown-bg-mid);
         color: var(--whitecolor);
@@ -286,7 +286,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-row-gap: 9px;
         -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
         box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
     }
