@@ -266,7 +266,7 @@
 
     /* Compétences */
     .competences {
-        padding-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
         gap: 1rem;
         justify-content: end;
     }
@@ -361,7 +361,7 @@
     /* Photo*/
     .profil {
         justify-content: end;
-        padding-bottom: 5rem;
+        padding-bottom: 1rem;
     }
 
     .photo {
