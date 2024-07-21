@@ -266,9 +266,9 @@
 
     /* Compétences */
     .competences {
-        padding-bottom: 0.5rem;
+        padding: 4rem 0;
         gap: 1rem;
-        justify-content: end;
+        justify-content: center;
     }
 
     .bloc-techno {
@@ -350,20 +350,16 @@
 
     /* Profil */
     .profil {
-        padding: 0;
+        padding: 4rem 0;
         display: flex;
         flex-direction: column-reverse;
+        justify-content: center;
         gap: 1.5rem;
     }
 
     /* container */
 
     /* Photo*/
-    .profil {
-        justify-content: end;
-        padding-bottom: 1rem;
-    }
-
     .photo {
         width: auto;
         height: 35vw;
@@ -384,7 +380,7 @@
 
     /* Contact */
     .contact {
-        padding-top: 5rem;
+        padding: 4rem 0;
     }
 
     form {
