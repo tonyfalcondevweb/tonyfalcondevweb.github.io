@@ -539,19 +539,18 @@
 
 
             <form id="contact-form"
-                action="https://docs.google.com/forms/d/e/1FAIpQLSexnoYaw9dDUIex-fKJozX_-sqIN50WmAWBKEDl8Ms2Usge7g/formResponse"
-                onSubmit={handleSubmit}>
+                action="https://docs.google.com/forms/d/e/1FAIpQLSexnoYaw9dDUIex-fKJozX_-sqIN50WmAWBKEDl8Ms2Usge7g/formResponse">
 
                 <div class="container-email-tel">
                     <div class="contact-champ">
                         <label id="label-email" for="entry.1986365585">Email :</label>
-                        <input class="input-contact input-email" id="entry.1986365585" type="email" placeholder=""
+                        <input class="input-contact input-email" name="entry.1986365585" type="email" placeholder=""
                             required>
                     </div>
 
                     <div class="contact-champ">
                         <label id="label-tel" for="entry.913581152">Téléphone :</label>
-                        <input class="input-contact input-tel" id="entry.913581152" type="tel" placeholder="">
+                        <input class="input-contact input-tel" name="entry.913581152" type="tel" placeholder="">
                     </div>
                 </div>
 
@@ -560,7 +559,7 @@
 
                     <div class="contact-champ container-msg">
                         <label id="label-msg" for="entry.960300449">Message :</label>
-                        <textarea class="input-msg" id="entry.960300449" required></textarea>
+                        <textarea class="input-msg" name="entry.960300449" required></textarea>
                     </div>
 
                     <div class="container-btn-form">
@@ -578,6 +577,6 @@
 
 </body>
 
-<script type="text/javascript" src="myjs.js?v=1.2.2"></script>
+<script type="text/javascript" src="myjs.js?v=1.2.4"></script>
 
 </html>
