@@ -11,7 +11,7 @@
 
 
 
-    <script src="https://kit.fontawesome.com/4c3531cfaa.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c3531cfaa.js" crossorigin="anonymous" async></script>
 
 
 <body>
@@ -88,7 +88,7 @@
         <section id="home" class="container home">
 
             <h1 class="title-home animation blur-base-hidden">Tony CHUNDUNSING</h1>
-            <p class="home-text dev animation blur-base-hidden">Développeur Web</p>
+            <h2 class="home-text dev animation blur-base-hidden">Développeur Web</h2>
 
         </section>
 
@@ -495,7 +495,7 @@
 
         <section id="projets" class="container projets">
 
-            <h2>Coming end of July 2024</h2>
+            <h3>Coming end of July 2024</h3>
 
         </section>
 
@@ -530,7 +530,11 @@
             </div>
 
             <div class="bloc-photo animation scale-base-hidden">
-                <img class="photo" src="img/photo_de_profil.png" alt="photo de profil">
+                <picture>
+                    <source srcset="img/photo_de_profil.avif" type="image/avif">
+                    <source srcset="img/photo_de_profil.webp" type="image/webp">
+                    <img class="photo" src="img/photo_de_profil.png" alt="photo de profil">
+                  </picture>
             </div>
         </section>
 
@@ -546,13 +550,13 @@
                 <div class="container-email-tel">
                     <div class="contact-champ">
                         <label id="label-email" for="entry.1986365585">Email :</label>
-                        <input class="input-contact input-email" name="entry.1986365585" type="email" placeholder=""
+                        <input class="input-contact input-email" id="entry.1986365585" name="entry.1986365585" type="email" placeholder=""
                             required>
                     </div>
 
                     <div class="contact-champ">
                         <label id="label-tel" for="entry.913581152">Téléphone :</label>
-                        <input class="input-contact input-tel" name="entry.913581152" type="tel" placeholder="">
+                        <input class="input-contact input-tel" id="entry.913581152" name="entry.913581152" type="tel" placeholder="">
                     </div>
                 </div>
 
@@ -561,7 +565,7 @@
 
                     <div class="contact-champ container-msg">
                         <label id="label-msg" for="entry.960300449">Message :</label>
-                        <textarea class="input-msg" name="entry.960300449" required></textarea>
+                        <textarea class="input-msg" id="entry.960300449" name="entry.960300449" required></textarea>
                     </div>
 
                     <div class="container-btn-form">
