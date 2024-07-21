@@ -429,7 +429,7 @@ header {
 /* Photo*/
 .photo {
     width: auto;
-    height: 50%;
+    height: 500px;
     border-radius: 20px;
     -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
