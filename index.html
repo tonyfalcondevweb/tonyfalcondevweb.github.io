@@ -533,7 +533,7 @@
                     <source srcset="img/photo_de_profil.avif" type="image/avif">
                     <source srcset="img/photo_de_profil.webp" type="image/webp">
                     <img class="photo" src="img/photo_de_profil.png" alt="photo de profil">
-                  </picture>
+                </picture>
             </div>
         </section>
 
@@ -543,33 +543,24 @@
         <section id="contact" class="container contact">
 
 
-            <form id="contact-form"
+            <form class="container-form"
                 action="https://docs.google.com/forms/d/e/1FAIpQLSexnoYaw9dDUIex-fKJozX_-sqIN50WmAWBKEDl8Ms2Usge7g/formResponse">
 
-                <div class="container-email-tel">
-                    <div class="contact-champ">
-                        <label id="label-email" for="entry.1986365585">Email :</label>
-                        <input class="input-contact input-email" id="entry.1986365585" name="entry.1986365585" type="email" placeholder=""
-                            required>
-                    </div>
-
-                    <div class="contact-champ">
-                        <label id="label-tel" for="entry.913581152">Téléphone :</label>
-                        <input class="input-contact input-tel" id="entry.913581152" name="entry.913581152" type="tel" placeholder="">
-                    </div>
+                <div class="container-email-tel-form">
+                    <input class="input-contact input-email" id="entry.1986365585" name="entry.1986365585" type="email"
+                        placeholder="Email" required>
+                    <input class="input-contact input-tel" id="entry.913581152" name="entry.913581152" type="tel"
+                        placeholder="Téléphone">
                 </div>
 
 
-                <div class="container-msg-btn">
+                <div class="container-msg-form">
+                    <textarea class="input-contact input-msg" id="entry.960300449" name="entry.960300449"
+                        placeholder="Message" required></textarea>
+                </div>
 
-                    <div class="contact-champ container-msg">
-                        <label id="label-msg" for="entry.960300449">Message :</label>
-                        <textarea class="input-msg" id="entry.960300449" name="entry.960300449" required></textarea>
-                    </div>
-
-                    <div class="container-btn-form">
-                        <button class="btn-form" class="input-contact" type="submit">Envoyer</button>
-                    </div>
+                <div class="container-btn-form">
+                    <button class="btn-form" type="submit">Envoyer</button>
                 </div>
 
 

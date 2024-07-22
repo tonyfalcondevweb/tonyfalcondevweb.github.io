@@ -387,7 +387,7 @@ header {
 }
 
 .skill {
-    width: 100%;
+    width: auto;
     margin: 1rem 0;
     font-size: 20px;
     list-style: none;
@@ -429,7 +429,7 @@ header {
 /* Photo*/
 .photo {
     width: auto;
-    height: 500px;
+    height: auto;
     border-radius: 20px;
     -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
@@ -443,7 +443,7 @@ header {
     display: flex;
     flex-direction: column;
     width: auto;
-    font-size: 20px;
+    font-size: large;
     line-height: 2.5rem;
     color: var(--whitecolor);
 }
@@ -494,13 +494,15 @@ header {
 .contact {
     align-items: center;
     background-color: var(--brown-bg);
-    padding-top: 7rem;
 }
 
-form {
-    padding: 4rem 2rem;
-    color: var(--beige-bg-light);
-    width: 58rem;
+.container-form {
+    padding: 15px;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
     border-radius: 15px;
     background-color: var(--brown-bg-mid);
     overflow: hidden;
@@ -508,113 +510,47 @@ form {
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
 }
 
-.contact-champ {
-    transition: transform .3s;
-}
-
-label {
-    margin: 0 0.5rem;
-    padding-right: 0.5rem;
-    font-size: 20px;
-}
-
-.input-contact {
-    padding: 0 0.5rem;
-    height: 2rem;
-    border-radius: 15px;
-    font-family: Chillax;
-    font-size: 15px;
-    text-align: center;
-
-}
-
-.contact-champ:hover {
-    transform: scale(1.10);
-    -webkit-transform: scale(1.10);
-}
-
-
-
-
-
-.container-email-tel {
+.container-email-tel-form {
     display: flex;
-    margin: 0 0 6rem 0;
-    padding: 0 2rem;
-    gap: 5rem;
+    width: auto;
+    gap: 1rem;
 }
 
-.input-email {
-    width: 18rem;
-}
-
-
-
-.input-tel {
-    width: 11.5rem;
-}
-
-
-
-
-.container-msg-btn {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding: 0 2rem;
-}
-
-.container-msg-btn .contact-champ {
-    transition: transform .3s;
-}
-
-.container-msg-btn .contact-champ:hover {
-    transform: scale(1.08);
-    -webkit-transform: scale(1.08);
-}
-
-.container-msg {
-    display: flex;
-}
-
-.input-msg {
-    padding: 0.5rem 0.6rem;
-    border: 0 solid white;
-    border-radius: 15px;
-    font-family: Chillax;
-    font-size: 15px;
-    width: 70%;
-    height: 10rem;
-}
-
-.input-msg:focus {
-    border: 0 solid white;
+.container-msg-form {
+    width: auto;
 }
 
 .container-btn-form {
     display: flex;
     justify-content: center;
+    width: auto;
+}
+
+.input-contact {
+    width: auto;
+    height: 4rem;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: ChillaxM;
+    color: var(--brown-bg);
+    font-size: large;
+}
+
+.input-msg {
+    width: 100%;
+    height: 10rem;
 }
 
 .btn-form {
-    cursor: pointer;
-    height: 2.3rem;
-    width: 12rem;
-    border: 2px solid var(--beige-bg-light);
-    border-radius: 10px;
-    font-family: Chillax;
-    font-size: 15px;
-    font-weight: bolder;
-    color: var(--whitecolor);
+    padding: 0.5rem 1rem;
     background-color: var(--brown-bg-mid);
-    transition: transform .3s;
+    border: solid var(--beige-bg);
+    border-radius: 15px;
+    color: var(--whitecolor);
+    font-family: ChillaxM;
+    font-size: large;
+    cursor: pointer;
 }
-
-.btn-form:hover {
-    transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-}
-
 /* Fin Contact */
 
 
@@ -635,161 +571,19 @@ label {
 
 
 
-/* Animation */
-.blur-base-hidden {
-    opacity: 0;
-    filter: blur(30px);
-    transform: scale(0.8);
 
-}
 
-.blur-base-show {
-    opacity: 1;
-    filter: blur(0);
-    transform: scale(1);
-    transition: all .6s ease-out;
-}
 
 
-/* ---------------- */
-@media (min-width: 1000px) {
 
-    .scale-base-hidden {
-        opacity: 0;
-        transform: scale(0.9);
 
-    }
 
-    .scale-base-show {
-        opacity: 1;
-        transform: scale(1);
-        transition: all .6s ease-out;
-    }
 
 
-    /* ---------------- */
 
 
-    .slide-up-top-hidden {
-        opacity: 0;
-        transform: scale(0.6);
 
-    }
-
-    .slide-up-top-show {
-        opacity: 1;
-        transform: scale(1);
-        transition: all 0.6s ease-out;
-    }
-
-
-    /* ---------------- */
-
-
-    .slide-up-mid-hidden {
-        opacity: 0;
-        transform: scale(0.6);
-
-    }
-
-    .slide-up-mid-show {
-        opacity: 1;
-        transform: scale(1);
-        transition: all 0.6s ease-out;
-        transition-delay: 0.20s;
-    }
-
-
-    /* ---------------- */
-
-
-    .slide-up-bot-hidden {
-        opacity: 0;
-        transform: scale(0.6);
-
-    }
-
-    .slide-up-bot-show {
-        opacity: 1;
-        transform: scale(1);
-        transition: all 0.6s ease-out;
-        transition-delay: 0.40s;
-    }
-
-
-    /* ---------------- */
-
-
-    .slide-up-skill-hidden {
-        opacity: 0;
-        transform: scale(0.6);
-
-    }
-
-    .slide-up-skill-show {
-        opacity: 1;
-        transform: scale(1);
-        transition: all 0.6s ease-out;
-        transition-delay: 0.60s;
-    }
-}
-
-/* Animation */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url(style.css);
-
+/* ------------------------------------------------------- Reponsive -------------------------------------------------------------------- */
 
 .container-menu-mobile {
     display: none;
@@ -946,21 +740,6 @@ label {
     }
 
     /* Profil */
-
-
-
-    /* Contact */
-    form {
-        margin: 0 2rem;
-        padding: 4rem 0;
-        width: auto;
-    }
-
-    .input-contact {
-        width: auto;
-    }
-
-    /* Contact */
 
 }
 
@@ -1170,46 +949,147 @@ label {
 
     /* Contact */
     .contact {
-        padding: 4rem 0;
+        padding: 4rem;
     }
 
-    form {
-        padding-top: 2rem;
-        margin: 0;
-        height: auto;
-        width: 85vw;
-        display: flex;
+    .container-email-tel-form {
         flex-direction: column;
     }
-
-    label {
-        font-size: medium;
-    }
-
-    .container-email-tel {
-        margin-bottom: 3rem;
-        gap: 3rem;
-        flex-direction: column;
-    }
-
-    .contact-champ {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1vw;
-    }
-
-    .input-contact {
-        width: auto;
-    }
-
-    .input-msg {
-        height: auto;
-        width: auto;
-    }
-
     /* Contact */
 
 }
 
 /* Ecran Mobile */
+
+
+
+/* ------------------------------------------------------- Reponsive -------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------- Animation --------------------------------------------------- */
+.blur-base-hidden {
+    opacity: 0;
+    filter: blur(30px);
+    transform: scale(0.8);
+
+}
+
+.blur-base-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+    transition: all .6s ease-out;
+}
+
+
+/* ---------------- */
+@media (min-width: 1000px) {
+
+    .scale-base-hidden {
+        opacity: 0;
+        transform: scale(0.9);
+
+    }
+
+    .scale-base-show {
+        opacity: 1;
+        transform: scale(1);
+        transition: all .6s ease-out;
+    }
+
+
+    /* ---------------- */
+
+
+    .slide-up-top-hidden {
+        opacity: 0;
+        transform: scale(0.6);
+
+    }
+
+    .slide-up-top-show {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.6s ease-out;
+    }
+
+
+    /* ---------------- */
+
+
+    .slide-up-mid-hidden {
+        opacity: 0;
+        transform: scale(0.6);
+
+    }
+
+    .slide-up-mid-show {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.6s ease-out;
+        transition-delay: 0.20s;
+    }
+
+
+    /* ---------------- */
+
+
+    .slide-up-bot-hidden {
+        opacity: 0;
+        transform: scale(0.6);
+
+    }
+
+    .slide-up-bot-show {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.6s ease-out;
+        transition-delay: 0.40s;
+    }
+
+
+    /* ---------------- */
+
+
+    .slide-up-skill-hidden {
+        opacity: 0;
+        transform: scale(0.6);
+
+    }
+
+    .slide-up-skill-show {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.6s ease-out;
+        transition-delay: 0.60s;
+    }
+}
+
+/* ----------------------------------------- Animation --------------------------------------------------- */
