@@ -86,35 +86,3 @@ hiddenElements.forEach((el) => observer.observe(el));
     take.forEach((el) => obs.observe(el));
 }
 // Navbar
-
-
-
-
-
-// Formulaire
-// Empeche l'envoi du formulaire
-function envoieForm (event) {
-
-    event.preventDefault();
-
-    window.location.href = "https://tonyfalcondevweb.github.io/";
-
-    var formulaire = document.getElementById("contact-form");
-
-    formulaire.action = "https://docs.google.com/forms/d/e/1FAIpQLSexnoYaw9dDUIex-fKJozX_-sqIN50WmAWBKEDl8Ms2Usge7g/formResponse";
-    var formData = new FormData(formulaire);
-
-
-
-    fetch(formulaire.action, {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors' // Mode no-cors car Google Forms n'autorise pas les requêtes cross-origin
-    }).then(response => {
-        // Redirection apres submit
-        window.location.href = "https://tonyfalcondevweb.github.io/";
-    }).catch(error => {
-        console.error('Erreur lors de l\'envoi du formulaire:', error);
-    });
-}
-// Formulaire
