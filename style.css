@@ -6,11 +6,7 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 1301px) {
-    .bloc-techno-mobile {
-        display: none;
-    }
-}
+
 
 
 
@@ -137,12 +133,12 @@ header {
     justify-content: space-between;
     padding: 0 3rem;
     width: 100%;
-    height: 3rem;
+    height: 3.5rem;
 }
 
 .menu {
     display: flex;
-    height: 3.5rem;
+    height: auto;
     list-style: none;
 }
 
@@ -166,25 +162,24 @@ header {
 
 
 .btn-link-nav {
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: x-large;
+    letter-spacing: 1px;
     text-decoration: none;
     color: var(--whitecolor);
-    letter-spacing: 1px;
 }
 
 .nav-anime-hidden {
     opacity: 0;
     background-color: var(--whitecolor);
     width: 60%;
-    height: 4px;
+    height: 3px;
     border-radius: 15px;
     transform: scaleX(0);
     transition: all 0.3s ease-out;
 }
 
 .nav-anime-active {
-    margin-top: 6px;
+    margin-top: 0.3rem;
     opacity: 1;
     transition-delay: 0s;
     transform: scaleX(100%);
@@ -206,29 +201,30 @@ header {
 
 /* Début Home */
 .home {
+    width: auto;
     flex-direction: column;
-    color: var(--whitecolor);
+    gap: 2rem;
     text-align: center;
+    color: var(--whitecolor);
     background-color: var(--brown-bg);
-    width: 100%;
 }
 
 .title-home {
-    width: 100%;
     margin: 0;
+    width: auto;
     font-size: 80px;
     letter-spacing: 9px;
     font-family: bosch;
-    text-shadow: 13px 14px 8px rgba(0,0,0,0.6);
+    text-shadow: 13px 14px 8px rgba(0, 0, 0, 0.6);
 }
 
 .home-text {
-    width: 100%;
-    margin: 2rem 0;
+    margin: 0;
+    width: auto;
     font-size: 50px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: var(--beige-bg);
-    text-shadow: 13px 14px 8px rgba(0,0,0,0.6);
+    text-shadow: 13px 14px 8px rgba(0, 0, 0, 0.6);
     font-family: ChillaxM;
 }
 
@@ -255,48 +251,35 @@ header {
 
 /* Debut Competences */
 .competences {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
     overflow: hidden;
     background-color: var(--brown-bg-light);
-    display: flex;
-    flex-direction: column;
 }
 
 .bloc-techno {
-    margin-top: 6rem;
+    gap: 0.2rem;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
-    height: 50%;
-    width: 100%;
-    gap: 4px;
-}
-
-.box-techno {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.titre-techno {
-    display: flex;
     align-items: center;
-    height: auto;
-    width: max-content;
-    font-size: 22px;
-    color: var(--beige-bg-light);
 }
+
 
 .ligne-techno {
+    padding: 1rem;
+    gap: 3rem;
     display: flex;
-    padding: 7px 25px;
-    height: 7rem;
-    width: fit-content;
-    background-color: var(--brown-bg-mid);
+    flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    height: auto;
+    width: auto;
+    background-color: var(--brown-bg-mid);
     -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
 }
-
 
 .ligne-top {
     border-radius: 15px;
@@ -310,40 +293,39 @@ header {
     border-radius: 0 0 15px 15px;
 }
 
-.techno {
-    height: 6rem;
-    width: 6rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    color: var(--whitecolor);
-    transition: transform .3s;
-    gap: 5px;
+.titre-techno {
+    height: auto;
+    width: auto;
+    font-size: medium;
+    color: var(--beige-bg-light);
 }
 
-.img-techno {
+.techno {
+    gap: 0.3rem;
+    width: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    height: auto;
     text-align: center;
+    color: var(--whitecolor);
+    transition: transform .3s;
 }
 
 .fa-brands {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .fa-solid {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .svg-icon {
-    margin: 0 auto;
-    width: 3rem;
+    width: 2rem;
 }
 
 .techno:hover {
-    transform: scale(1.15);
-    -webkit-transform: scale(1.15);
+    transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
 }
 
 .text-techno:hover {
@@ -351,19 +333,20 @@ header {
 }
 
 .bloc-skill {
-    padding: 2rem 0;
     display: flex;
-    align-items: end;
     justify-content: center;
-    height: 50%;
-    width: 100%;
-    gap: 2rem;
+    height: auto;
+    width: auto;
+    gap: 1rem;
 }
 
 .ligne-skill {
-    padding: 1rem 0;
-    height: fit-content;
-    width: 23rem;
+    padding: 1rem;
+    width:  18rem;
+    gap: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     border-radius: 15px;
     background-color: var(--brown-bg-mid);
     text-align: center;
@@ -372,24 +355,20 @@ header {
 }
 
 .titre-skill {
-    margin-bottom: 2.53rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: fit-content;
-    font-size: 23px;
+    width: auto;
+    height: auto;
+    font-size: 1.1rem;
     color: var(--beige-bg-light);
 }
 
 .box-skill {
-    height: fit-content;
+    height: auto;
 }
 
 .skill {
     width: auto;
-    margin: 1rem 0;
-    font-size: 20px;
+    margin: 0.6rem 0;
+    font-size: medium;
     list-style: none;
     color: var(--whitecolor);
     transition: transform .3s;
@@ -397,8 +376,8 @@ header {
 }
 
 .skill:hover {
-    transform: scale(1.15);
-    -webkit-transform: scale(1.15);
+    transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
 }
 
 /* Fin Competences */
@@ -412,9 +391,8 @@ header {
 
 
 /* Debut Profil */
-/* container */
 .profil {
-    padding: 0 13rem;
+    padding: 4rem 15rem;
     color: var(--whitecolor);
     background-color: var(--brown-bg-light);
     display: flex;
@@ -424,27 +402,19 @@ header {
     overflow: hidden;
 }
 
-/* container */
-
-/* Photo*/
 .photo {
     width: auto;
-    height: auto;
+    height: 23rem;
     border-radius: 20px;
     -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
 }
 
-/* Photo*/
-
-/* Text*/
 .bloc-text {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
     width: auto;
-    font-size: large;
-    line-height: 2.5rem;
+    height: auto;
+    font-size: medium;
+    line-height: 2rem;
     color: var(--whitecolor);
 }
 
@@ -453,7 +423,6 @@ header {
     letter-spacing: 1.2px;
 }
 
-/* Text*/
 /* Fin Profil */
 
 
@@ -551,6 +520,7 @@ header {
     font-size: large;
     cursor: pointer;
 }
+
 /* Fin Contact */
 
 
@@ -583,17 +553,25 @@ header {
 
 
 
-/* ------------------------------------------------------- Reponsive -------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- Reponsive ------------------------------------------------------------------------------------------------------ */
 
+
+/* Navbar Mobile */
 .container-menu-mobile {
     display: none;
 }
+/* Navbar Mobile */
 
-
+/* ----------------------- Ecran Pc Portable ----------------------- */
+@media (min-width: 1440px) {
+    .bloc-techno-mobile {
+        display: none;
+    }
+}
 
 
 /* Ecran PC Portable*/
-@media (max-width: 1370px) {
+@media (max-width: 1440px) {
 
     .bloc-techno-mobile {
         display: none;
@@ -621,7 +599,7 @@ header {
     }
 
     .home-text {
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
     .nav-anime-hidden {
@@ -635,75 +613,7 @@ header {
 
 
 
-    /* Compétences */
-    .bloc-techno {
-        margin-top: 5rem;
-        height: auto;
-        width: auto;
-    }
-
-    .ligne-techno {
-        margin: 0;
-        padding: 0;
-        gap: 0;
-        height: auto;
-        justify-content: center;
-    }
-
-    .ligne-top {
-        padding: 0 2rem;
-        width: auto;
-    }
-
-    .ligne-mid {
-        padding: 0 2rem;
-        width: auto;
-    }
-
-    .ligne-bot {
-        padding: 0 2rem;
-        width: auto;
-    }
-
-    .titre-techno {
-        font-size: large;
-        width: auto;
-    }
-
-    .fa-brands {
-        font-size: xx-large;
-    }
-
-    .fa-solid {
-        font-size: xx-large;
-    }
-
-    .svg-icon {
-        width: 2rem;
-    }
-
-    .text-techno {
-        font-size: small;
-        width: auto;
-    }
-
-
-
-    .ligne-skill {
-        padding: 1.5rem;
-        height: auto;
-        width: 18rem;
-    }
-
-    .titre-skill {
-        margin: 0;
-        font-size: large;
-    }
-
-    .skill {
-        font-size: medium;
-    }
-
+    /* Compétences */    
     /* Compétences */
 
 
@@ -713,41 +623,30 @@ header {
 
     /* Profil */
     .profil {
-        padding: 0 6rem;
+        padding: 0 5rem;
         gap: 5rem;
     }
 
-    /* container */
-
-    /* Photo*/
-    .photo {
-        width: auto;
-        height: 28vw;
-    }
-
-    /* Photo*/
-
-    /* Text*/
     .bloc-text {
         width: auto;
-        font-size: medium;
-        line-height: 1.5rem;
-
+        height: auto;
+        font-size: small;
+        line-height: 2rem;
     }
 
-    .profil-strong {
-        letter-spacing: 1.2px;
+    .photo {
+        width: auto;
+        height: 17rem;
     }
-
     /* Profil */
 
 }
 
-/* Ecran PC Portable*/
+/* ----------------------- Ecran Pc Portable ----------------------- */
 
 
-/* Ecran Mobile*/
-@media (max-width: 768px) {
+/* ----------------------- Ecran Mobile ----------------------- */
+@media (max-width: 900px) {
 
 
     /* Navbar mobile */
@@ -761,7 +660,7 @@ header {
         align-items: center;
         margin: 1rem;
         color: var(--whitecolor);
-        font-size: 4.5vw;
+        font-size: large;
     }
 
     .container-menu-mobile>* {
@@ -800,14 +699,6 @@ header {
 
 
     /* Home */
-    .title-home {
-        font-size: 6vw;
-    }
-
-    .home-text {
-        font-size: 5.5vw;
-    }
-
     /* Home */
 
 
@@ -835,7 +726,7 @@ header {
 
     /* Compétences */
     .competences {
-        padding: 4rem 0;
+        padding: 4rem 1rem;
         gap: 1rem;
         justify-content: center;
     }
@@ -845,7 +736,6 @@ header {
     }
 
     .bloc-techno-mobile {
-        margin: 0 1rem;
         padding: 1rem 0;
         height: auto;
         background-color: var(--brown-bg-mid);
@@ -860,8 +750,10 @@ header {
         box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
     }
 
-
     .techno-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
         margin: 0;
         padding: 0;
         text-align: center;
@@ -884,18 +776,15 @@ header {
         font-size: small;
     }
 
-
-
-
     .bloc-skill {
         margin: 0;
-        padding: 0 1rem;
+        width: auto;
         height: auto;
         gap: 1rem;
     }
 
     .ligne-skill {
-        height: 100%;
+        height: auto;
         width: 100%;
     }
 
@@ -907,6 +796,12 @@ header {
     .skill {
         margin: 0.5rem 0;
         font-size: 11px;
+        transition: none;
+    }
+
+    .skill:hover {
+        transform: none;
+        -webkit-transform: none;
     }
 
     /* Compétences */
@@ -919,31 +814,23 @@ header {
 
     /* Profil */
     .profil {
-        padding: 4rem 0;
-        display: flex;
+        padding: 4rem 1.5rem;
         flex-direction: column-reverse;
-        justify-content: center;
-        gap: 4rem;
+        justify-content: space-evenly;
     }
 
-    /* container */
-
-    /* Photo*/
+    
     .photo {
-        width: auto;
-        height: 35vw;
+        height: 11rem;
     }
 
-    /* Photo*/
-
-    /* Text*/
     .bloc-text {
-        padding: 0 2rem;
-        height: auto;
         width: auto;
+        height: auto;
         font-size: small;
         line-height: 1.5rem;
-    }
+        color: var(--whitecolor);
+    }    
     /* Profil */
 
 
@@ -959,7 +846,7 @@ header {
 
 }
 
-/* Ecran Mobile */
+/* ----------------------- Ecran Mobile ----------------------- */
 
 
 

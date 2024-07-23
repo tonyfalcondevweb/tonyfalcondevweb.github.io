@@ -93,17 +93,28 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // Formulaire
 // Empeche l'envoi du formulaire
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Empêche la soumission normale du formulaire
+function envoieForm (event) {
 
-    // Récupère les données du formulaire
-    const formData = new FormData(this);
+    event.preventDefault();
 
-    // Envoie les données du formulaire de manière asynchrone
-    fetch(this.action, {
+    window.location.href = "https://tonyfalcondevweb.github.io/";
+
+    var formulaire = document.getElementById("contact-form");
+
+    formulaire.action = "https://docs.google.com/forms/d/e/1FAIpQLSexnoYaw9dDUIex-fKJozX_-sqIN50WmAWBKEDl8Ms2Usge7g/formResponse";
+    var formData = new FormData(formulaire);
+
+
+
+    fetch(formulaire.action, {
         method: 'POST',
         body: formData,
-        mode: 'no-cors' // Permet d'éviter les problèmes de CORS
-    }).then(window.location.href = "https://tonyfalcondevweb.github.io/")
-});
+        mode: 'no-cors' // Mode no-cors car Google Forms n'autorise pas les requêtes cross-origin
+    }).then(response => {
+        // Redirection apres submit
+        window.location.href = "https://tonyfalcondevweb.github.io/";
+    }).catch(error => {
+        console.error('Erreur lors de l\'envoi du formulaire:', error);
+    });
+}
 // Formulaire
