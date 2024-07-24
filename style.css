@@ -466,7 +466,7 @@ header {
 }
 
 .container-form {
-    padding: 15px;
+    padding: 1.8rem;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -503,6 +503,12 @@ header {
     font-family: ChillaxM;
     color: var(--brown-bg);
     font-size: large;
+    transition: transform .3s;
+}
+
+.input-top:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
 }
 
 .input-msg {
@@ -510,7 +516,13 @@ header {
     height: 10rem;
 }
 
+.input-msg:hover {
+    transform: scale(1.015);
+    -webkit-transform: scale(1.015);
+}
+
 .btn-form {
+    margin-top: auto;
     padding: 0.5rem 1rem;
     background-color: var(--brown-bg-mid);
     border: solid var(--beige-bg);
@@ -519,6 +531,13 @@ header {
     font-family: ChillaxM;
     font-size: large;
     cursor: pointer;
+    transition: transform .3s;
+}
+
+.btn-form:hover {
+    background-color: var(--brown-bg);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
 }
 
 /* Fin Contact */
