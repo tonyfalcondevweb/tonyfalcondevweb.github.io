@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -45,6 +46,31 @@ section {
 
 h3 {
     letter-spacing: 1.5px;
+}
+
+span {
+    text-align: center;
+    color: var(--whitecolor);
+}
+
+.btn {
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+    background-color: var(--brown-bg-mid);
+    border: solid var(--beige-bg);
+    border-radius: 15px;
+    color: var(--whitecolor);
+    font-family: ChillaxM;
+    font-size: large;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.btn:hover {
+    border-color: var(--beige-bg-light);
+    background-color: var(--brown-bg);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
 }
 
 /* base CSS */
@@ -390,6 +416,197 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Début Projet */
+.projets {
+    color: var(--whitecolor);
+    background-color: var(--brown-bg);
+}
+
+.projet-desktop {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.slider__nav {
+    width: 1rem;
+    height: 1rem;
+    margin: 2rem 0.4rem;
+    border-radius: 50%;
+    z-index: 10;
+    outline: 6px solid #ccc;
+    outline-offset: -60px;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.slider__nav:checked {
+    -webkit-animation: check 0.4s linear forwards;
+    animation: check 0.4s linear forwards;
+}
+
+.slider__nav:checked:nth-of-type(1)~.container-projet {
+    left: 0%;
+}
+
+.slider__nav:checked:nth-of-type(2)~.container-projet {
+    left: -100%;
+}
+
+.slider__nav:checked:nth-of-type(3)~.container-projet {
+    left: -200%;
+}
+
+.container-projet {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.box-projet {
+    height: auto;
+    gap: 5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc-projet {
+    padding: 1rem;
+    width: 23vw;
+    height: 30rem;
+    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: var(--brown-bg-mid);
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
+    transition: transform .3s;
+}
+
+.bloc-projet:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+.projet-information {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 15px;
+}
+
+.list-titre {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.entreprise {
+    color: var(--beige-bg-light);
+    font-size: 1.3rem;
+}
+
+.poste {
+    font-size: 1rem;
+}
+
+.date {
+    color: var(--beige-bg);
+    font-size: 0.9rem;
+}
+
+.projet-description {
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    color: #F0F0F0;
+}
+
+/* Fin Projet */
+
+
+
+
+
+
+
+
+
 /* Debut Profil */
 .profil {
     padding: 4rem 15rem;
@@ -428,35 +645,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Début Projet */
-.projets {
-    color: var(--whitecolor);
-    background-color: var(--brown-bg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-    overflow: hidden;
-}
-
-.titre-temp {
-    color: var(--whitecolor);
-}
-
-/* Fin Projet */
 
 
 /* Début Contact */
@@ -521,25 +709,6 @@ header {
     -webkit-transform: scale(1.015);
 }
 
-.btn-form {
-    margin-top: auto;
-    padding: 0.5rem 1rem;
-    background-color: var(--brown-bg-mid);
-    border: solid var(--beige-bg);
-    border-radius: 15px;
-    color: var(--whitecolor);
-    font-family: ChillaxM;
-    font-size: large;
-    cursor: pointer;
-    transition: transform .3s;
-}
-
-.btn-form:hover {
-    background-color: var(--brown-bg);
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-}
-
 /* Fin Contact */
 
 
@@ -580,10 +749,14 @@ header {
     display: none;
 }
 
+.projet-mobile {
+    display: none;
+}
+
 /* Navbar Mobile */
 
 /* ----------------------- Ecran Pc Portable ----------------------- */
-@media (min-width: 1440px) {
+@media (min-width: 1599px) {
     .bloc-techno-mobile {
         display: none;
     }
@@ -591,7 +764,7 @@ header {
 
 
 /* Ecran PC Portable*/
-@media (max-width: 1440px) {
+@media (max-width: 1599px) {
 
     .bloc-techno-mobile {
         display: none;
@@ -637,7 +810,48 @@ header {
     /* Compétences */
 
 
+    /* Projet */
+    .bloc-projet {
+        padding: 1rem;
+        width: 23vw;
+        height: auto;
+        gap: 2rem;
 
+    }
+
+
+    .projet-information {
+
+    }
+
+    .logo {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 15px;
+    }
+
+    .list-titre {
+
+    }
+
+    .entreprise {
+        font-size: small;
+    }
+
+    .poste {
+        font-size: x-small;
+    }
+
+    .date {
+        font-size: x-small;
+    }
+
+    .projet-description {
+
+        font-size: x-small;
+    }
+
+    /* Projet */
 
 
 
@@ -669,6 +883,10 @@ header {
 /* ----------------------- Ecran Mobile ----------------------- */
 @media (max-width: 900px) {
 
+
+    .projet-desktop {
+        display: none;
+    }
 
     /* Navbar mobile */
     .navbar {
@@ -815,6 +1033,94 @@ header {
 
     /* Compétences */
 
+
+
+    /* Projet */
+    .projet {
+        
+    }
+
+    .projet-mobile {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .container-projet {
+        width: 400%;
+        display: flex;
+    }
+
+    .box-projet {
+        gap: 1rem;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc-projet {
+        margin: 0 1rem;
+        gap: 1.5rem;
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+
+    .bloc-projet:hover {
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    .projet-information {
+        justify-content: space-around;
+    }
+
+    .logo {
+
+    }
+
+    .list-titre {
+
+    }
+
+    .entreprise {
+
+    }
+
+    .poste {
+
+    }
+
+    .date {
+
+    }
+
+    .projet-description {
+
+    }
+
+
+    .slider__nav:checked:nth-of-type(4)~.container-projet {
+        left: -300%;
+    }
+    /* Projet */
 
 
 
@@ -991,6 +1297,29 @@ header {
     }
 }
 
+@-webkit-keyframes check {
+    50% {
+        outline-color: var(--brown-bg-mid);
+        border: solid 8px var(--beige-bg-light);
+    }
+
+    100% {
+        outline-color: var(--brown-bg-mid);
+        border: solid 8px var(--beige-bg-light);
+    }
+}
+
+@keyframes check {
+    50% {
+        outline-color: var(--brown-bg-mid);
+        border: solid 8px var(--beige-bg-light);
+    }
+
+    100% {
+        outline-color: var(--brown-bg-mid);
+        border: solid 8px var(--beige-bg-light);
+    }
+}
 
 
 
