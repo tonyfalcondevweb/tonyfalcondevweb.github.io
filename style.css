@@ -649,8 +649,29 @@ header {
 
 /* Début Contact */
 .contact {
+    justify-content: start;
+    flex-direction: column;
     align-items: center;
     background-color: var(--brown-bg);
+}
+
+.contact-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 70%;
+}
+
+.contact-end {
+    padding: 1rem 0;
+    gap: 5rem;
+    height: 30%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
 }
 
 .container-form {
@@ -707,6 +728,27 @@ header {
 .input-msg:hover {
     transform: scale(1.015);
     -webkit-transform: scale(1.015);
+}
+
+
+
+.contact-link {
+    /* padding-bottom: 8rem; */
+    height: auto;
+    display: flex;
+    gap: 5rem;
+    flex-direction: row;
+}
+
+.contact-icon {
+    font-size: 2.7rem;
+    color: var(--whitecolor);
+    transition: transform .3s;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
 
 /* Fin Contact */
@@ -820,9 +862,7 @@ header {
     }
 
 
-    .projet-information {
-
-    }
+    .projet-information {}
 
     .logo {
         width: 5rem;
@@ -830,9 +870,7 @@ header {
         border-radius: 15px;
     }
 
-    .list-titre {
-
-    }
+    .list-titre {}
 
     .entreprise {
         font-size: small;
@@ -874,6 +912,10 @@ header {
     }
 
     /* Profil */
+
+    /* Contact */
+
+    /* Contact */
 
 }
 
@@ -1036,9 +1078,7 @@ header {
 
 
     /* Projet */
-    .projet {
-        
-    }
+    .projet {}
 
     .projet-mobile {
         width: 100%;
@@ -1092,34 +1132,10 @@ header {
         justify-content: space-around;
     }
 
-    .logo {
-
-    }
-
-    .list-titre {
-
-    }
-
-    .entreprise {
-
-    }
-
-    .poste {
-
-    }
-
-    .date {
-
-    }
-
-    .projet-description {
-
-    }
-
-
     .slider__nav:checked:nth-of-type(4)~.container-projet {
         left: -300%;
     }
+
     /* Projet */
 
 
@@ -1153,11 +1169,32 @@ header {
 
     /* Contact */
     .contact {
-        padding: 4rem;
+        justify-content: end;
     }
 
     .container-email-tel-form {
         flex-direction: column;
+    }
+
+    .contact-start {
+        height: auto;
+    }
+    
+    .contact-end {
+        padding-bottom: 0.3rem;
+        gap: 2rem;
+        /* height: 100%; */
+    }
+
+    .contact-icon {
+        transition: none;
+    }
+
+    .contact-icon:hover {
+        transform: none;
+    }
+    .copyright {
+        font-size: x-small;
     }
 
     /* Contact */
