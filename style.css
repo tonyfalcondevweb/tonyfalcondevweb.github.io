@@ -1555,12 +1555,12 @@ header {
         padding: 1rem 1.5rem;
         flex-direction: column-reverse;
         display: flex;
-        gap: 20rem;
+        gap: 5rem;
     }
 
     .photo {
-        width: 90px;
-        height: 150px;
+        width: 100px;
+        height: 180px;
     }
 
     .profil-strong {
