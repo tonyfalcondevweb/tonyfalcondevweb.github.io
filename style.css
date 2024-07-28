@@ -1316,11 +1316,6 @@ header {
 
 
     /* Home */
-
-    .home {
-        padding: 0 1rem;
-    }
-
     #hero-title {
         font-size: x-large;
     }
@@ -1559,9 +1554,8 @@ header {
     .profil {
         padding: 1rem 1.5rem;
         flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 2rem;
+        display: flex;
+        gap: 20rem;
     }
 
     .photo {
@@ -1587,8 +1581,8 @@ header {
     @media (min-height: 900px) {
 
         .photo {
-            width: 150px;
-            height: 250px;
+            width: 110px;
+            height: 200px;
         }
 
         .profil {
