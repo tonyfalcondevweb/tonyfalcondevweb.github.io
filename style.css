@@ -1273,6 +1273,9 @@ header {
         justify-content: space-evenly;
     }
 
+    .bloc-photo {
+        height: 30%;
+    }
 
     .photo {
         height: 11rem;
@@ -1280,10 +1283,28 @@ header {
 
     .bloc-text {
         width: auto;
-        height: auto;
-        font-size: small;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 0.9rem;
         line-height: 1.5rem;
         color: var(--whitecolor);
+    }
+
+    .profil-titre {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 1rem;
+    }
+
+    .profil-titre > span:last-child {
+        color: var(--beige-bg-light);
+    }
+
+    .profil-strong {
+        font-size: 0.9rem;
     }
 
     /* Profil */
