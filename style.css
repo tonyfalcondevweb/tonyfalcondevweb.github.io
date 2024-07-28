@@ -866,10 +866,14 @@ header {
 
 
     /* Projet */
+    .box-projet {
+        gap: 2rem;
+    }
+
     .bloc-projet {
         padding: 1rem;
-        width: 23vw;
-        height: auto;
+        width: 30vw;
+        height: 28rem;
         gap: 2rem;
 
     }
@@ -890,16 +894,24 @@ header {
     }
 
     .poste {
-        font-size: x-small;
+        font-size: small;
     }
 
     .date {
-        font-size: x-small;
+        font-size: small;
+    }
+
+    .projet-champ-lien {
+        font-size: small;
+    }
+
+    .projet-link {
+        font-size: small;
     }
 
     .projet-description {
-
-        font-size: x-small;
+        justify-content: space-between;
+        font-size: small;
     }
 
     /* Projet */
@@ -929,6 +941,39 @@ header {
     /* Contact */
 
     /* Contact */
+
+}
+
+@media (max-width: 1200px) {
+
+    .bloc-projet {
+        height: 30rem;
+    }
+
+    .entreprise {
+        font-size: x-small;
+    }
+
+    .poste {
+        font-size: x-small;
+    }
+
+    .date {
+        font-size: x-small;
+    }
+
+    .projet-champ-lien {
+        font-size: x-small;
+    }
+
+    .projet-link {
+        font-size: x-small;
+    }
+
+    .projet-description {
+        justify-content: space-between;
+        font-size: x-small;
+    }
 
 }
 
@@ -1093,6 +1138,10 @@ header {
     /* Projet */
     .projet {}
 
+    .slider__nav {
+        margin: 2rem 0.7rem;
+    }
+
     .projet-mobile {
         width: 100%;
         height: auto;
@@ -1192,7 +1241,7 @@ header {
     .contact-start {
         height: auto;
     }
-    
+
     .contact-end {
         padding-bottom: 0.3rem;
         gap: 2rem;
@@ -1206,6 +1255,7 @@ header {
     .contact-icon:hover {
         transform: none;
     }
+
     .copyright {
         font-size: x-small;
     }
