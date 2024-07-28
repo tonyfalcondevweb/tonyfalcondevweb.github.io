@@ -465,7 +465,7 @@ header {
 .slider__nav {
     width: 1rem;
     height: 1rem;
-    margin: 2rem 0.4rem;
+    margin: 2rem 0.6rem;
     border-radius: 50%;
     z-index: 10;
     outline: 6px solid #ccc;
@@ -593,9 +593,14 @@ header {
     font-size: 0.9rem;
 }
 
+.fa-link {
+    font-size: medium;
+}
+
 .projet-link {
-    color: var(--beige-bg);
+    color: var(--whitecolor);
     font-size: 0.9rem;
+    text-underline-offset: 3px;
 }
 
 .projet-description {
@@ -1145,43 +1150,37 @@ header {
     .projet-mobile {
         width: 100%;
         height: auto;
-        position: relative;
-        overflow: hidden;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-flex-flow: row nowrap;
-        -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-        -webkit-box-align: end;
-        -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-        align-items: flex-end;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+        flex-direction: row;
+
     }
 
-    .container-projet {
-        width: 400%;
+    .container-projet-mobile {
+        width: 800%;
         display: flex;
+        flex-direction: row;
+        /* overflow: auto; */
+        white-space: nowrap;
+ 
+        overflow-x: auto; /* Active le défilement horizontal */
+        scroll-snap-type: x mandatory; /* Défilement en "snap" sur l'axe horizontal */
+        scroll-behavior: smooth; /* Défilement fluide */
+        scroll-padding: 0; /* Supprime le padding au scroll */
     }
 
     .box-projet {
-        gap: 1rem;
+        flex: 0 0 100%; 
+        scroll-snap-align: start; 
+        /* gap: 1rem;
         height: auto;
         width: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; */
     }
 
     .bloc-projet {
-        margin: 0 1rem;
-        gap: 1.5rem;
-        width: auto;
-        height: auto;
+        width: 23rem;
+        height: 30rem;
         display: flex;
     }
 
@@ -1189,13 +1188,47 @@ header {
         transform: none;
         -webkit-transform: none;
     }
-
-    .projet-information {
-        justify-content: space-around;
+    
+    .logo {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 15px;
     }
-
-    .slider__nav:checked:nth-of-type(4)~.container-projet {
-        left: -300%;
+    
+    .list-titre {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+    }
+    
+    .entreprise {
+        font-size: small;
+    }
+    
+    .poste {
+        font-size: small;
+    }
+    
+    .date {
+        font-size: small;
+    }
+    
+    .projet-champ-lien {
+        font-size: small;
+    }
+    
+    .projet-link {
+        font-size: small;
+    }
+    
+    .projet-description {
+        white-space: normal;
+        justify-content: space-evenly;
+        line-height: 1.5rem;
+        font-size: small;
     }
 
     /* Projet */
