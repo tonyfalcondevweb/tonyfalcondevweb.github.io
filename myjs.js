@@ -86,3 +86,37 @@ hiddenElements.forEach((el) => observer.observe(el));
     take.forEach((el) => obs.observe(el));
 }
 // Navbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Référence aux éléments de la page
+    const container = document.querySelector('.container-projet-mobile');
+    const indicators = document.querySelectorAll('.indicator');
+
+    // Fonction pour mettre à jour les indicateurs en fonction de la position de défilement
+    function updateIndicators() {
+        const scrollLeft = container.scrollLeft;
+        const sectionWidth = container.offsetWidth;
+        const currentIndex = Math.round(scrollLeft / sectionWidth);
+
+        // Met à jour chaque indicateur
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    // Écoute l'événement de défilement pour mettre à jour les indicateurs
+    container.addEventListener('scroll', updateIndicators);
+
+    // Initialiser les indicateurs au chargement de la page
+    updateIndicators();

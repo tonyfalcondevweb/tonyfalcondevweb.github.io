@@ -919,6 +919,8 @@ header {
         font-size: small;
     }
 
+
+
     /* Projet */
 
 
@@ -1159,28 +1161,25 @@ header {
         width: 800%;
         display: flex;
         flex-direction: row;
-        /* overflow: auto; */
-        white-space: nowrap;
- 
-        overflow-x: auto; /* Active le défilement horizontal */
-        scroll-snap-type: x mandatory; /* Défilement en "snap" sur l'axe horizontal */
-        scroll-behavior: smooth; /* Défilement fluide */
-        scroll-padding: 0; /* Supprime le padding au scroll */
+
+        
+        position: relative;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scroll-padding: 0;
     }
 
+
+
     .box-projet {
-        flex: 0 0 100%; 
-        scroll-snap-align: start; 
-        /* gap: 1rem;
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column; */
+        flex: 0 0 100%;
+        scroll-snap-align: start;
     }
 
     .bloc-projet {
         width: 23rem;
-        height: 30rem;
+        height: 35rem;
         display: flex;
     }
 
@@ -1188,13 +1187,13 @@ header {
         transform: none;
         -webkit-transform: none;
     }
-    
+
     .logo {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 6.5rem;
+        height: 6.5rem;
         border-radius: 15px;
     }
-    
+
     .list-titre {
         width: 100%;
         height: auto;
@@ -1203,32 +1202,60 @@ header {
         list-style: none;
         text-align: center;
     }
-    
+
     .entreprise {
         font-size: small;
     }
-    
+
     .poste {
         font-size: small;
     }
-    
+
     .date {
         font-size: small;
     }
-    
+
     .projet-champ-lien {
         font-size: small;
     }
-    
+
+    .fa-link {
+        font-size: small;
+    }
+
     .projet-link {
         font-size: small;
     }
-    
+
     .projet-description {
-        white-space: normal;
-        justify-content: space-evenly;
+        justify-content: space-around;
         line-height: 1.5rem;
         font-size: small;
+    }
+
+
+    .indicator-container {
+        position: absolute;
+        bottom: -197%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+    }
+
+    /* Style des cercles */
+    .indicator {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ddd;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Cercle actif */
+    .indicator.active {
+        border: solid 1px var(--beige-bg);
+        background-color: var(--brown-bg-mid);
     }
 
     /* Projet */
