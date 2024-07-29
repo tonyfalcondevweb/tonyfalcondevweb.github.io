@@ -303,7 +303,7 @@ header {
 .mouse {
     width: 40px;
     height: 60px;
-    border: 4px solid #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 60px;
     box-shadow: 5px 9px 13px rgba(0, 0, 0, 0.6);
 }
@@ -313,50 +313,53 @@ header {
     width: 7px;
     height: 7px;
     position: absolute;
-    top: 20%;
+    top: 25%;
     background: #ffffff;
     transform: translateX(-50%);
     border-radius: 50%;
     opacity: 1;
-    animation: jumpInfinite 2s infinite;
+    animation: jumpInfinite 3s infinite;
     transition-delay: 1s;
 }
 
 @keyframes jumpInfinite {
     0% {
-        top: 20%;
+        transition: ease;
+        top: 25%;
     }
 
     10% {
-        top: 55%;
+
     }
 
     20% {
-        top: 60%;
+
     }
 
     30% {
-        top: 55%;
+
     }
 
-    35% {
-        top: 45%;
+    50% {
+        transition: ease;
+        top: 65%;
     }
 
     45% {
-        top: 55%;
+
     }
 
     65% {
-        top: 60%;
+
     }
 
     75% {
-        top: 55%;
+
     }
 
     100% {
-        20%
+        transition: ease;
+        top: 25%;
     }
 }
 
