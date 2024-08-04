@@ -703,7 +703,7 @@ header {
 }
 
 .fa-link {
-    font-size: medium;
+    font-size: small;
 }
 
 .projet-link {
@@ -1385,19 +1385,19 @@ header {
     }
 
     .fa-brands {
-        font-size: xx-large;
+        font-size: x-large;
     }
 
     .fa-solid {
-        font-size: xx-large;
+        font-size: x-large;
     }
 
     .svg-icon {
-        width: 2rem;
+        width: 	1.5rem
     }
 
     .text-techno-mobile {
-        font-size: small;
+        font-size: x-small;
     }
 
     .bloc-skill {
@@ -1414,12 +1414,12 @@ header {
 
     .titre-skill {
         margin-bottom: 0;
-        font-size: small;
+        font-size: x-small;
     }
 
     .skill {
-        margin: 0.5rem 0;
-        font-size: 11px;
+        margin: 0.2rem 0;
+        font-size: xx-small;
         transition: none;
     }
 
@@ -1433,7 +1433,9 @@ header {
 
 
     /* Projet */
-    .projet {}
+    .projet {
+        padding: 4rem 0;
+    }
 
     .slider__nav {
         margin: 2rem 0.7rem;
@@ -1444,11 +1446,11 @@ header {
         height: auto;
         display: flex;
         flex-direction: row;
-
     }
 
     .container-projet-mobile {
         width: 800%;
+        height: auto;
         display: flex;
         flex-direction: row;
         position: relative;
@@ -1461,13 +1463,14 @@ header {
 
 
     .box-projet {
+        padding: 4rem 1rem;
         flex: 0 0 100%;
         scroll-snap-align: start;
     }
 
     .bloc-projet {
-        width: 23rem;
-        height: 35rem;
+        width: auto;
+        height: 25rem;
         display: flex;
     }
 
@@ -1477,8 +1480,8 @@ header {
     }
 
     .logo {
-        width: 6.5rem;
-        height: 6.5rem;
+        width: 3rem;
+        height: 3rem;
         border-radius: 15px;
     }
 
@@ -1492,33 +1495,33 @@ header {
     }
 
     .entreprise {
-        font-size: small;
+        font-size: x-small;
     }
 
     .poste {
-        font-size: small;
+        font-size: x-small;
     }
 
     .date {
-        font-size: small;
+        font-size: x-small;
     }
 
     .projet-champ-lien {
-        font-size: small;
+        font-size: x-small;
     }
 
     .fa-link {
-        font-size: small;
+        font-size: xx-small;
     }
 
     .projet-link {
-        font-size: small;
+        font-size: x-small;
     }
 
     .projet-description {
         justify-content: space-around;
-        line-height: 1.5rem;
-        font-size: small;
+        line-height: 1rem;
+        font-size: x-small;
     }
 
 
@@ -1651,7 +1654,7 @@ header {
     }
 
     .contact-end {
-        gap: 5rem;
+        gap: 5vh;
 
     }
 
