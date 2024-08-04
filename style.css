@@ -1319,20 +1319,23 @@ header {
 
 
     /* Home */
+    .box-home-title {
+        gap: 3vh;
+    }
     #hero-title {
-        font-size: x-large;
+        font-size: 3vh;
     }
 
     #hero-title span {
-        font-size: 1.7rem;
+        font-size: 3vh;
     }
 
     #hero-sub-title {
-        font-size: small;
+        font-size: 2.5vh;
     }
 
     #hero-sub-title span {
-        font-size: 1.5rem;
+        font-size: 2.5vh;
     }
 
     /* Home */
@@ -1385,19 +1388,19 @@ header {
     }
 
     .fa-brands {
-        font-size: x-large;
+        font-size: 3.5vh;
     }
 
     .fa-solid {
-        font-size: x-large;
+        font-size: 3.5vh;
     }
 
     .svg-icon {
-        width: 	1.5rem
+        width: 	3.5vh;
     }
 
     .text-techno-mobile {
-        font-size: x-small;
+        font-size: 1.5vh;
     }
 
     .bloc-skill {
@@ -1414,12 +1417,12 @@ header {
 
     .titre-skill {
         margin-bottom: 0;
-        font-size: x-small;
+        font-size: 1.9vh;
     }
 
     .skill {
         margin: 0.2rem 0;
-        font-size: xx-small;
+        font-size: 1.7vh;
         transition: none;
     }
 
@@ -1470,7 +1473,7 @@ header {
 
     .bloc-projet {
         width: auto;
-        height: 25rem;
+        height: 65vh;
         display: flex;
     }
 
@@ -1480,8 +1483,8 @@ header {
     }
 
     .logo {
-        width: 3rem;
-        height: 3rem;
+        width: 10vh;
+        height: 10vh;
         border-radius: 15px;
     }
 
@@ -1495,19 +1498,19 @@ header {
     }
 
     .entreprise {
-        font-size: x-small;
+        font-size: 2vh;
     }
 
     .poste {
-        font-size: x-small;
+        font-size: 2vh;
     }
 
     .date {
-        font-size: x-small;
+        font-size: 2vh;
     }
 
     .projet-champ-lien {
-        font-size: x-small;
+        font-size: 2vh;
     }
 
     .fa-link {
@@ -1515,13 +1518,13 @@ header {
     }
 
     .projet-link {
-        font-size: x-small;
+        font-size: 2vh;
     }
 
     .projet-description {
         justify-content: space-around;
-        line-height: 1rem;
-        font-size: x-small;
+        line-height: 2.5vh;
+        font-size: 1.7vh;
     }
 
 
@@ -1561,82 +1564,28 @@ header {
         padding: 1rem 1.5rem;
         flex-direction: column-reverse;
         display: flex;
-        gap: 5rem;
+        gap: 7vh;
     }
 
     .photo {
-        width: 100px;
-        height: 180px;
+        width: 12vh;
+        height: 20vh;
     }
 
     .profil-strong {
-        font-size: medium;
+        font-size: 1.9vh;
     }
 
     .bloc-text {
-        gap: 2rem;
+        gap: 4vh;
         width: auto;
         height: auto;
         display: flex;
         flex-direction: column;
-        font-size: medium;
-        line-height: 1.5rem;
+        font-size: 2vh;
+        line-height: 3vh;
         color: var(--whitecolor);
     }
-
-    @media (min-height: 900px) {
-
-        .photo {
-            width: 110px;
-            height: 200px;
-        }
-
-        .profil {
-            gap: 2rem;
-        }
-
-        .bloc-text {
-            font-size: large;
-            line-height: 1.7rem;
-        }
-
-        .profil-strong {
-            font-size: large;
-        }
-    }
-
-
-    @media (max-height: 700px) {
-
-        .profil {
-            padding: 1rem 1.5rem;
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-content: end;
-            gap: 2rem;
-        }
-
-        .photo {
-            width: 70px;
-            height: 130px;
-        }
-
-        .bloc-text {
-            gap: 1rem;
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            font-size: 0.9rem;
-            line-height: 1.5rem;
-            color: var(--whitecolor);
-        }
-
-        .profil-strong {
-            font-size: small;
-        }
-    }
-
     /* Profil */
 
 
