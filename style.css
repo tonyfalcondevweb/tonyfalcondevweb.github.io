@@ -1642,6 +1642,8 @@ header {
 
     /* Contact */
     .contact {
+        width: auto;
+        height: 100%;
         justify-content: center;
     }
 
@@ -1650,12 +1652,21 @@ header {
     }
 
     .contact-start {
+        padding: 0 1rem;
+        width: 100%;
         height: auto;
+    }
+
+    .container-form {
+        width: 100%;
+    }
+
+    .input-contact {
+        font-size: small;
     }
 
     .contact-end {
         gap: 5vh;
-
     }
 
     .contact-icon {
