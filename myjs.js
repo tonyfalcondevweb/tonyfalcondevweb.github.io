@@ -115,3 +115,13 @@ container.addEventListener('scroll', updateIndicators);
 // Initialiser les indicateurs au chargement de la page
 updateIndicators();
 // Projet
+
+
+
+
+
+
+document.querySelectorAll('.profil-strong').forEach(element => {
+    const randomDelay = Math.random() * 3; // Génère un délai aléatoire entre 0 et 3 secondes
+    element.style.animationDelay = `${randomDelay}s`;
+  });
