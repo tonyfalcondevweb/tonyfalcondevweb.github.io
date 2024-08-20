@@ -1358,17 +1358,17 @@ header {
     .box-home-title {
         gap: 3vh;
     }
-    #hero-title {
+    /* #hero-title {
         font-size: 3vh;
-    }
+    } */
 
     #hero-title span {
         font-size: 3vh;
     }
 
-    #hero-sub-title {
+    /* #hero-sub-title {
         font-size: 2.5vh;
-    }
+    } */
 
     #hero-sub-title span {
         font-size: 2.5vh;
