@@ -274,7 +274,7 @@ header {
 }
 
 #hero-title span:nth-child(5) {
-    width: 3rem;
+    width: 3vw;
 }
 
 #hero-title span:hover {
@@ -294,7 +294,7 @@ header {
 }
 
 #hero-sub-title span:nth-child(11) {
-    width: 2rem;
+    width: 2vw;
 }
 
 #hero-sub-title span {
@@ -1024,17 +1024,9 @@ header {
         letter-spacing: 0.5vw;
     }
     
-    #hero-title span:nth-child(5) {
-        width: 1rem;
-    }
-    
     #hero-sub-title span {
         font-size: 2vw;
         letter-spacing: 0.3vw;
-    }
-    
-    #hero-sub-title span:nth-child(11) {
-        width: 1rem;
     }
     /* Home */
 
@@ -1358,25 +1350,25 @@ header {
     .box-home-title {
         gap: 3vh;
     }
-    /* #hero-title {
-        font-size: 3vh;
-    } */
-
+    
     #hero-title span {
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
-    /* #hero-sub-title {
-        font-size: 2.5vh;
-    } */
-
     #hero-sub-title span {
-        font-size: 2.5vh;
+        font-size: 2vh;
     }
 
     #hero-title span:hover {
         transform: none;
     }
+    /* #hero-title span:nth-child(5) {
+        width: 3vw;
+    }
+    
+    #hero-sub-title span:nth-child(11) {
+        width: 2vw;
+    } */
     /* Home */
 
 
