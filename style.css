@@ -439,6 +439,7 @@ header {
 }
 
 .svg-icon {
+    fill: white;
     width: 2rem;
 }
 
@@ -917,6 +918,10 @@ header {
 .input-msg:hover {
     transform: scale(1.015);
     -webkit-transform: scale(1.015);
+}
+
+#status {
+    color: var(--whitecolor);
 }
 
 

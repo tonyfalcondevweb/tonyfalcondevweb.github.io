@@ -124,4 +124,29 @@ updateIndicators();
 document.querySelectorAll('.profil-strong').forEach(element => {
     const randomDelay = Math.random() * 3; // Génère un délai aléatoire entre 0 et 3 secondes
     element.style.animationDelay = `${randomDelay}s`;
-  });
+});
+
+
+
+
+
+document.getElementById('contact-form').addEventListener('submit', async function (event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            mode: 'no-cors' // Ce mode est nécessaire pour envoyer des données à Google Forms
+        });
+
+        // Affiche un message de succès (Google Forms ne renverra pas de réponse avec no-cors)
+        location.reload();
+    } catch (error) {
+        // Affiche un message d'erreur
+        document.getElementById('status').innerHTML = 'Une erreur est survenue lors de l\'envoi du message.';
+    }
+});
