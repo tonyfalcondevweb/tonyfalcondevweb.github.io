@@ -1438,6 +1438,7 @@ header {
     }
 
     .svg-icon {
+        fill: white;
         width: 	3.5vh;
     }
 
